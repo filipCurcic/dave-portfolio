@@ -1,0 +1,38 @@
+$primary: #484d5c;
+$white_text: rgb(240, 240, 240);
+$orange_text: #ffce00;
+@import './mixins.scss';
+.flex {
+  display: flex;
+  &-ai-c {
+    align-items: center;
+  }
+  &-jc-c {
+    justify-content: center;
+  }
+  &-jc-sb {
+    justify-content: space-between;
+  }
+  &-c {
+    justify-content: center;
+    align-items: center;
+  }
+  &-fd-r {
+    flex-direction: row;
+  }
+  &-fd-c {
+    flex-direction: column;
+  }
+}
+
+.hide-for-mobile {
+  @include breakpoint-down(medium) {
+    display: none;
+  }
+}
+
+.hide-for-desktop {
+  @include breakpoint-up(large) {
+    display: none;
+  }
+}

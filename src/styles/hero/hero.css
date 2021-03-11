@@ -1,0 +1,187 @@
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-fd-r {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.flex-fd-c {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (max-width: 63.9375em) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 64em) {
+  .hide-for-desktop {
+    display: none;
+  }
+}
+
+@media (max-width: 1021px) {
+  .hero__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 8vh;
+    height: 92vh;
+  }
+  .hero__container .content1,
+  .hero__container .content2,
+  .hero__container .content3 {
+    position: absolute;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+  }
+  .hero__container .content1 {
+    top: 0;
+    height: 42.5%;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 77.9%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0%, 100% 77.9%, 0% 100%);
+    background-image: url("../../images/phl.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .hero__container .content2 {
+    top: 33%;
+    height: 40%;
+    -webkit-clip-path: polygon(0 23.7%, 100% 0, 100% 76.3%, 0% 100%);
+            clip-path: polygon(0 23.7%, 100% 0, 100% 76.3%, 0% 100%);
+    background-image: url("../../images/vi.jfif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .hero__container .content3 {
+    top: 63.45%;
+    height: 40%;
+    -webkit-clip-path: polygon(0 23.8%, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 23.8%, 100% 0, 100% 100%, 0% 100%);
+    background-image: url("../../images/pal.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+}
+
+@media (min-width: 1022px) {
+  .hero__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 10vh;
+    height: 90vh;
+  }
+  .content1,
+  .content2,
+  .content3 {
+    position: absolute;
+    height: 90vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    opacity: 0.85;
+    font-size: 2.5125em;
+    color: white;
+    text-transform: uppercase;
+  }
+  .content1:hover,
+  .content2:hover,
+  .content3:hover {
+    opacity: 1;
+    cursor: pointer;
+    color: #ffce00;
+  }
+  .content1 {
+    width: 40%;
+    background-image: url("../../images/ph.JPG");
+    -webkit-clip-path: polygon(0 0, 99% 0, 60.1% 100%, 0% 100%);
+            clip-path: polygon(0 0, 99% 0, 60.1% 100%, 0% 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .content1 h1 {
+    margin-right: 150px;
+  }
+  .content2 {
+    left: 24%;
+    width: 60%;
+    -webkit-clip-path: polygon(26% 0, 85% 0, 60% 100%, 0% 100%);
+            clip-path: polygon(26% 0, 85% 0, 60% 100%, 0% 100%);
+    background-image: url("../../images/vi.jfif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .content2 h1 {
+    margin-right: 180px;
+  }
+  .content3 {
+    right: 0;
+    width: 40%;
+    -webkit-clip-path: polygon(37.3% 0, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(37.3% 0, 100% 0, 100% 100%, 0% 100%);
+    background-image: url("../../images/pa.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .content3 h1 {
+    margin-left: 170px;
+  }
+}
+/*# sourceMappingURL=hero.css.map */
