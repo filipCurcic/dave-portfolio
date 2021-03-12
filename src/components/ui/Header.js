@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../../styles/header/header.scss';
-import '../../styles/global.scss';
+import '../../styles/_global.scss';
 import HamburgerMenu from './HamburgerMenu';
 
 const Header = () => {

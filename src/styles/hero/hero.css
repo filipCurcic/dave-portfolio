@@ -14,6 +14,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  justify-items: center;
 }
 
 .flex-jc-sb {
@@ -75,7 +76,6 @@
   .hero__container .content3 {
     position: absolute;
     width: 100%;
-    color: white;
     font-size: 20px;
   }
   .hero__container .content1 {
@@ -141,11 +141,22 @@
     color: white;
     text-transform: uppercase;
   }
+  .content1 a,
+  .content2 a,
+  .content3 a {
+    color: white;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
   .content1:hover,
   .content2:hover,
   .content3:hover {
     opacity: 1;
     cursor: pointer;
+  }
+  .content1:hover a,
+  .content2:hover a,
+  .content3:hover a {
     color: #ffce00;
   }
   .content1 {

@@ -1,7 +1,7 @@
 $primary: #484d5c;
 $white_text: rgb(240, 240, 240);
 $orange_text: #ffce00;
-@import './mixins.scss';
+@import './_mixins.scss';
 .flex {
   display: flex;
   &-ai-c {
@@ -9,6 +9,7 @@ $orange_text: #ffce00;
   }
   &-jc-c {
     justify-content: center;
+    justify-items: center;
   }
   &-jc-sb {
     justify-content: space-between;

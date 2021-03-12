@@ -57,4 +57,33 @@
     display: none;
   }
 }
-/*# sourceMappingURL=global.css.map */
+
+.modal {
+  position: fixed;
+  z-index: 1000;
+  width: 100vw;
+  height: 100vh;
+  top: 8vh;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.855);
+  padding: 0 1.25em;
+  padding-top: 2.125px;
+  padding-bottom: 10.3125em;
+}
+
+.modal .modal__content {
+  width: 70%;
+  height: 70%;
+  font-size: 2em;
+  padding: 2em 0;
+  color: white;
+}
+
+.modal .modal__content > div {
+  margin-bottom: 1em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=modal.css.map */
