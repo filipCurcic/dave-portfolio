@@ -1,0 +1,31 @@
+.contact {
+  margin-top: 10vh;
+  padding: 4em 6.25em;
+  justify-content: space-between;
+  &__leftContainer {
+    padding-left: 2e;
+    width: 50%;
+    h1 {
+      font-size: 5em;
+      margin-bottom: 0.75em;
+    }
+    p {
+      font-size: 1.65em;
+      line-height: 30px;
+    }
+  }
+  &__rightContainer {
+    width: 40%;
+    text-align: center;
+    margin-top: 2em;
+    &__formTopContainer {
+      justify-content: space-between;
+    }
+    &__formBottomContainer {
+      > button {
+        width: 100%;
+        margin-top: 2em;
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.UploadForm {
+  margin: 30px auto 10px;
+  text-align: center;
+}
+.UploadFormLabel input {
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
+.UploadFormLabel {
+  //   display: block;
+  //   width: 130px;
+  //   height: 130px;
+  //   border: 1px solid black;
+  //   border-radius: 50%;
+  margin: 10px auto;
+  //   line-height: 30px;
+  //   color: black;
+  //   font-weight: bold;
+  //   font-size: 24px;
+}
+.UploadFormLabel:hover {
+  //   background: white;
+  //   color: white;
+  cursor: pointer;
+}
+.Output {
+  height: 60px;
+  font-size: 0.8rem;
+}
+.Error {
+  color: red;
+}

@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import ProgressBar from './ProgressBar';
+import '../../styles/uploadForm/uploadForm.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUpload } from '@fortawesome/free-solid-svg-icons';
 
 const UploadForm = () => {
   const [file, setFile] = useState(null);
@@ -20,10 +23,19 @@ const UploadForm = () => {
     }
   };
   return (
-    <form>
-      <input type="file" onChange={changeHandler} />
-      <div className="uploadForm__output">
-        {error && <div className="uploadForm__error"> {error} </div>}
+    <form className="UploadForm">
+      <label className="UploadFormLabel">
+        <input
+          className="UploadFormInput"
+          onChange={changeHandler}
+          type="file"
+        />
+        <span>
+          <FontAwesomeIcon size="3x" icon={faUpload} />
+        </span>
+      </label>
+      <div className="Output">
+        {error && <div className="Error"> {error} </div>}
         {file && <div> {file.name} </div>}
         {file && <ProgressBar file={file} setFile={setFile} />}
       </div>

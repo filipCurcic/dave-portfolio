@@ -1,0 +1,18 @@
+.login {
+  margin-top: 10vh;
+  padding: 3em 0;
+
+  &__form {
+    padding: 2em;
+    width: 400px;
+    height: 400px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 2%;
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 1021px) {
+  .login__form {
+    border: none;
+  }
+}

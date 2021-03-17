@@ -1,25 +1,44 @@
 import React from 'react';
-import '../../styles/hero/hero.css';
-import '../../styles/global.css';
+import '../../styles/hero/hero.scss';
+import '../../styles/_global.scss';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 const HeroSection = () => {
   return (
-    <div className="hero__container">
+    <div className="hero">
       <Link to="/photography">
-        <div className="content1 flex flex-c">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ ease: 'easeOut', duration: 0.1 }}
+          className="content1 flex flex-c"
+          whileHover={{ filter: 'brightness(85%)' }}
+        >
           <h1>photo</h1>
-        </div>
+        </motion.div>
       </Link>
       <Link to="/videography">
-        <div className="content2 flex flex-c">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ ease: 'easeOut', duration: 0.1 }}
+          className="content2 flex flex-c"
+          whileHover={{ filter: 'brightness(85%)' }}
+        >
           <h1>video</h1>
-        </div>
+        </motion.div>
       </Link>
       <Link to="/panorama">
-        <div className="content3 flex flex-c">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ ease: 'easeOut', duration: 0.1 }}
+          className="content3 flex flex-c"
+          whileHover={{ filter: 'brightness(85%)' }}
+        >
           <h1>panorama</h1>
-        </div>
+        </motion.div>
       </Link>
     </div>
   );

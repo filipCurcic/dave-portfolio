@@ -2,7 +2,7 @@
 @import '../../styles//mixins.scss';
 
 @media (max-width: 1021px) {
-  .hero__container {
+  .hero {
     display: flex;
     width: 100vw;
     flex-direction: column;
@@ -15,6 +15,9 @@
       position: absolute;
       width: 100%;
       font-size: 20px;
+      h1 {
+        color: $orange_text;
+      }
     }
 
     .content1 {
@@ -45,7 +48,7 @@
 }
 
 @media (min-width: 1022px) {
-  .hero__container {
+  .hero {
     display: flex;
     width: 100vw;
     flex-direction: column;
@@ -65,15 +68,14 @@
     font-size: 2.5125em;
     color: white;
     text-transform: uppercase;
-    a {
+    h1 {
       color: white;
       transition: 0.5s;
     }
 
     &:hover {
-      opacity: 1;
       cursor: pointer;
-      a {
+      h1 {
         color: $orange_text;
       }
     }

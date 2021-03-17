@@ -1,0 +1,17 @@
+.panoramas {
+  padding: 0 6.25em;
+  margin-top: 12vh;
+  margin-bottom: 2vh;
+  &__divider {
+    height: 2px;
+    width: 300px;
+    margin: 0 auto;
+    background-color: black;
+  }
+}
+@media (max-width: 1021px) {
+  .panoramas {
+    padding: 0;
+    margin-top: 8vh;
+  }
+}

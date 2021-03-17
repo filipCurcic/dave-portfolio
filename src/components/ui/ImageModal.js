@@ -18,8 +18,10 @@ const ImageModal = ({ image, setSelectedImage }) => {
       onClick={handleClick}
     >
       <motion.img
-        initial={{ y: '-100vh' }}
-        animate={{ y: 0 }}
+        // initial={{ y: '-100vh' }}
+        // animate={{ y: 0 }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
         src={image}
         alt="enlarged"
       />
