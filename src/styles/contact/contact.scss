@@ -29,3 +29,24 @@
     }
   }
 }
+@media (max-width: 1021px) {
+  .contact {
+    padding: 1em;
+    flex-direction: column;
+    text-align: center;
+    &__leftContainer {
+      width: 100%;
+      h1 {
+        font-size: 3em;
+        margin-bottom: 0.75em;
+      }
+      p {
+        font-size: 1.35em;
+        line-height: 20px;
+      }
+    }
+    &__rightContainer {
+      width: 100%;
+    }
+  }
+}

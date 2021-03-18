@@ -22,7 +22,7 @@ const Header = () => {
           <Link>SHOP</Link>
         </div>
         <div className="header__buttonContainer__button">
-          <Link>
+          <Link to="/">
             <FontAwesomeIcon icon={faInstagram} />
           </Link>
         </div>
