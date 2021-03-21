@@ -1,9 +1,11 @@
 import React from 'react';
+import VideoGrid from '../components/ui/VideoGrid';
+import '../styles/videography/videography.scss';
 
 const Videography = () => {
   return (
-    <div>
-      <h1>video</h1>
+    <div className="video flex flex-c">
+      <VideoGrid />
     </div>
   );
 };

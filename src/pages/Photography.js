@@ -9,7 +9,7 @@ const Photography = () => {
 
   return (
     <div className="photography__container">
-      {currentUser ? <UploadForm /> : null}
+      {currentUser ? <UploadForm type="images" /> : null}
       <ImageGrid />
     </div>
   );

@@ -4,7 +4,7 @@ import '../../styles/uploadForm/uploadForm.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUpload } from '@fortawesome/free-solid-svg-icons';
 
-const UploadForm = () => {
+const UploadForm = ({ type }) => {
   const [file, setFile] = useState(null);
   const [error, setError] = useState(null);
 
@@ -37,7 +37,7 @@ const UploadForm = () => {
       <div className="Output">
         {error && <div className="Error"> {error} </div>}
         {file && <div> {file.name} </div>}
-        {file && <ProgressBar file={file} setFile={setFile} />}
+        {file && <ProgressBar file={file} setFile={setFile} type={type} />}
       </div>
     </form>
   );

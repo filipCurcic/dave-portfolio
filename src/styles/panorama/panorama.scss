@@ -2,6 +2,12 @@
   padding: 0 6.25em;
   margin-top: 12vh;
   margin-bottom: 2vh;
+  > div {
+    margin-bottom: 2em;
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
   &__divider {
     height: 2px;
     width: 300px;
@@ -11,7 +17,10 @@
 }
 @media (max-width: 1021px) {
   .panoramas {
-    padding: 0;
-    margin-top: 8vh;
+    padding: 0 1em;
+    margin-top: 10vh;
+    > div {
+      margin: 0 auto;
+    }
   }
 }

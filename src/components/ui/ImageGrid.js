@@ -42,7 +42,6 @@ const ImageGrid = () => {
               className="imageGrid__imageWrap"
               onClick={() => setSelectedImage(doc.url)}
               key={docs.id}
-              whileHover={{ filter: 'brightness(80%)' }}
               layout
             >
               <FontAwesomeIcon

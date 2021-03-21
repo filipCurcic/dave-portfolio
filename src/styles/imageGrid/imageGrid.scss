@@ -8,14 +8,10 @@
     position: absolute;
     top: 25px;
     right: 25px;
-    color: rgb(185, 185, 185);
-    transition: 0.3s;
+    transition: 0.5s;
     z-index: 10;
     font-size: 1.5em;
-    &:hover {
-      color: white;
-      opacity: 1;
-    }
+    color: rgb(0, 0, 0);
   }
   &__imageWrap {
     overflow: hidden;
@@ -23,14 +19,13 @@
     // width: 400px;
     padding: 50% 0;
     position: relative;
-    background-color: rgba(0, 0, 0, 0.878);
+    background-color: rgba(255, 255, 255, 0.878);
     transition: 0.3s;
 
     &:hover {
       cursor: pointer;
-      background-color: rgb(0, 0, 0);
       .imageGrid__deleteIcon {
-        opacity: 0.9;
+        opacity: 1;
       }
     }
     > img {
@@ -52,6 +47,9 @@
     grid-gap: 6px;
     &__imageWrap {
       opacity: 1;
+    }
+    &__deleteIcon {
+      display: none;
     }
   }
 }
