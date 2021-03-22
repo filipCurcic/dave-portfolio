@@ -1,0 +1,19 @@
+.videoUpload {
+  width: 800px;
+  margin-top: 1em;
+  &__formContainer {
+    width: 100%;
+    &__topRow {
+      justify-content: space-between;
+      input {
+        width: 375px;
+      }
+    }
+    &__bottomRow {
+      width: 100%;
+      input {
+        width: 800px;
+      }
+    }
+  }
+}

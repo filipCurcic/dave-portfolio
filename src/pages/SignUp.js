@@ -24,8 +24,8 @@ const SignUp = ({ history }) => {
       <h1>Sign Up</h1>
 
       <form onSubmit={handleSignUp} className="login__form flex flex-fd-c">
-        <TextField name="email" placeholder="Email" />
-        <TextField name="password" placeholder="Password" type="password" />
+        <TextField name="email" label="Email" />
+        <TextField name="password" label="Password" type="password" />
         <Button variant="contained" type="submit">
           Sign Up
         </Button>
