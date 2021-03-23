@@ -3,14 +3,15 @@
   padding: 0 6.25em;
 
   &__videoGrid {
-    margin-top: 20px;
+    margin: 1.65em 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    width: 100%;
 
     grid-gap: 20px;
     grid-auto-flow: dense;
     &__videoCard {
-      min-height: 500px;
+      width: 100%;
       &__textContent {
         padding: 20px 20px;
         > h2 {
@@ -18,6 +19,36 @@
         }
         > h4 {
           margin-top: 1em;
+        }
+        &__deleteIcon {
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1300px) {
+  .video {
+    padding: 0 1em;
+    &__videoGrid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (max-width: 1021px) {
+  .video {
+    padding: 0 1em;
+    &__videoGrid {
+      grid-template-columns: repeat(1, 1fr);
+      &__videoCard {
+        &__deleteIcon {
+          display: none;
+        }
+        &__videoWrapper {
+          width: 100%;
         }
       }
     }

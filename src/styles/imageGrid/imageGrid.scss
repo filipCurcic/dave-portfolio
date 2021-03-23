@@ -44,7 +44,9 @@
 }
 @media (max-width: 1021px) {
   .imageGrid {
+    padding: 5px;
     grid-gap: 6px;
+    grid-template-columns: 1fr 1fr;
     &__imageWrap {
       opacity: 1;
     }

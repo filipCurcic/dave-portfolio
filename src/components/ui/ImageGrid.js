@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import useFirestore from '../../hooks/useFirestore';
 import '../../styles/imageGrid/imageGrid.scss';
 import ImageModal from './ImageModal';
@@ -7,7 +7,9 @@ import Spinner from './Spinner';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 import { projectStorage, projectFirestore } from '../../firebase/config';
+import { AuthContext } from '../../auth/Auth';
 const ImageGrid = () => {
+  const { currentUser } = useContext(AuthContext);
   const { docs } = useFirestore('images');
   console.log(docs);
 
@@ -21,15 +23,13 @@ const ImageGrid = () => {
 
   const deleteImage = (id, ref) => {
     const imageRef = storageRef.child(ref);
-    console.log(imageRef);
     imageRef
       .delete()
       .then(() => {
         projectFirestore.collection('images').doc(id).delete();
-        console.log('deleted successfully');
       })
       .catch((error) => {
-        console.log(error);
+        alert(error);
       });
   };
 
@@ -44,11 +44,13 @@ const ImageGrid = () => {
               key={docs.id}
               layout
             >
-              <FontAwesomeIcon
-                className="imageGrid__deleteIcon"
-                icon={faTrashAlt}
-                onClick={() => deleteImage(doc.id, doc.imageName)}
-              />
+              {currentUser ? (
+                <FontAwesomeIcon
+                  className="imageGrid__deleteIcon"
+                  icon={faTrashAlt}
+                  onClick={() => deleteImage(doc.id, doc.imageName)}
+                />
+              ) : null}
               <motion.img
                 onError={() => <div></div>}
                 src={doc.url}

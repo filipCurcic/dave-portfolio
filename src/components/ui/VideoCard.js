@@ -1,12 +1,20 @@
-import React from 'react';
-import ReactPlayer from 'react-player';
+import React, { useContext } from 'react';
 import '../../styles/videography/videography.scss';
 import { motion } from 'framer-motion';
-
+import { AuthContext } from '../../auth/Auth';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 import Card from '@material-ui/core/Card';
 import { Divider } from '@material-ui/core';
+import VideoPlayer from './VideoPlayer';
 
-const VideoCard = ({ url }) => {
+import { projectFirestore } from '../../firebase/config';
+
+const VideoCard = ({ url, title, description, id }) => {
+  const { currentUser } = useContext(AuthContext);
+  const deleteVideo = (docId) => {
+    projectFirestore.collection('videos').doc(docId).delete();
+  };
   return (
     <motion.div
       initial={{ opacity: 1 }}
@@ -14,11 +22,23 @@ const VideoCard = ({ url }) => {
       transition={{ ease: 'easeOut', duration: 1 }}
     >
       <Card className="video__videoGrid__videoCard">
-        <ReactPlayer url={url} />
+        <VideoPlayer embedId={url} />
         <div className="video__videoGrid__videoCard__textContent">
-          <h2>Video Title</h2>
+          <div
+            className="flex flex-ai-c"
+            style={{ justifyContent: 'space-between', width: '100%' }}
+          >
+            <h2>{title}</h2>
+            {currentUser && (
+              <FontAwesomeIcon
+                className="video__videoGrid__videoCard__textContent__deleteIcon"
+                icon={faTrashAlt}
+                onClick={() => deleteVideo(id)}
+              />
+            )}
+          </div>
           <Divider />
-          <h4>Brief Description</h4>
+          <h4>{description}</h4>
         </div>
       </Card>
     </motion.div>

@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from 'react';
+import React, { useState } from 'react';
 
 //material
 import Accordion from '@material-ui/core/Accordion';
@@ -13,7 +13,7 @@ import CloseIcon from '@material-ui/icons/Close';
 
 import '../../styles/videoUpload/videoUpload.scss';
 import { Button, Divider } from '@material-ui/core';
-import { projectFirestore } from '../../firebase/config';
+import { projectFirestore, timestamp } from '../../firebase/config';
 
 const VideoUploadForm = () => {
   const [open, setOpen] = useState(false);
@@ -35,7 +35,9 @@ const VideoUploadForm = () => {
         title: title.value,
         url: url.value,
         description: description.value,
+        createdAt: timestamp(),
       });
+      event.target.reset();
       setOpen(true);
     } catch (error) {
       alert(error);
@@ -44,8 +46,8 @@ const VideoUploadForm = () => {
   };
   return (
     <div className="videoUpload">
-      <Accordion>
-        <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit}>
+        <Accordion>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel1a-content"
@@ -79,8 +81,8 @@ const VideoUploadForm = () => {
               Save
             </Button>
           </AccordionActions>
-        </form>
-      </Accordion>
+        </Accordion>
+      </form>
       <Snackbar
         anchorOrigin={{
           vertical: 'bottom',
