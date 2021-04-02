@@ -46,37 +46,49 @@ const Contact = () => {
           animate={{ x: 0, opacity: 1 }}
           transition={{ ease: 'easeOut', duration: 0.75 }}
         >
-          Hi, i'm Dave
+          Hi, I’m David
         </motion.h1>
+
         <AnimatedParagraph delay={0.7}>
-          <h3>I'm a landscape photographer</h3>
+          <h3>
+            I am a photographer and videographer based in Cumbria, England. I
+            started taking photos around 2013 when I got my first camera and it
+            has been a hobby ever since, with a dream of turning it into my
+            full-time job.
+          </h3>
+        </AnimatedParagraph>
+        <br />
+        <AnimatedParagraph delay={1.1}>
+          This portfolio shows a combination of examples of my work and photos I
+          have taken in my own time.
         </AnimatedParagraph>
         <br />
         <AnimatedParagraph delay={1.5}>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime
-          quisquam harum, totam perferendis?
+          I am also offering different services for anyone after their own
+          photos, using a combination of knowledge and quality equipment I can
+          provide a range of specialist photographic options including super
+          high-resolution landscape images, 360-degree panoramas and more. My
+          video services are primarily aimed at promotional videos but I am more
+          than happy to be part of any project.
         </AnimatedParagraph>
         <br />
         <AnimatedParagraph delay={1.9}>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime
-          quisquam harum, totam perferendis? Lorem ipsum dolor sit amet
-          consectetur, adipisicing elit. Maxime quisquam harum, totam
-          perferendis?
+          Please get in touch if you would like to discuss any of my work or if
+          you are interested in purchasing any of my photos.
         </AnimatedParagraph>
         <br />
         <br />
-        <AnimatedParagraph delay={2.3}>Want to get in touch?</AnimatedParagraph>
       </div>
       <motion.div
         className="contact__rightContainer"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 2.8, ease: 'easeOut', duration: 0.75 }}
+        transition={{ delay: 2.4, ease: 'easeOut', duration: 0.75 }}
       >
         <h1>Contact Me</h1>
         <form onSubmit={sendEmail}>
           <motion.div
-            transition={{ delay: 3.2, ease: 'easeOut', duration: 0.75 }}
+            transition={{ delay: 2.9, ease: 'easeOut', duration: 0.75 }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             className="contact__rightContainer__formTopContainer flex"
@@ -95,7 +107,7 @@ const Contact = () => {
             />
           </motion.div>
           <motion.div
-            transition={{ delay: 3.5, ease: 'easeOut', duration: 0.75 }}
+            transition={{ delay: 3.3, ease: 'easeOut', duration: 0.75 }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             className="contact__rightContainer__formBottomContainer"

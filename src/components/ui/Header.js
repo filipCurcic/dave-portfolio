@@ -11,7 +11,7 @@ const Header = () => {
     <header className="header flex flex-fd-r flex-ai-c ">
       <Link to="/">
         <div className="header__logoContainer">
-          <h1>DAVE LASTNAME</h1>
+          <h1>DAVID CHAPMAN</h1>
         </div>
       </Link>
       <div className="header__buttonContainer flex flex-fd-r hide-for-mobile">
@@ -22,9 +22,13 @@ const Header = () => {
           <Link>SHOP</Link>
         </div>
         <div className="header__buttonContainer__button">
-          <Link to="/">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.instagram.com/davidchphoto/"
+          >
             <FontAwesomeIcon icon={faInstagram} />
-          </Link>
+          </a>
         </div>
       </div>
       <HamburgerMenu />

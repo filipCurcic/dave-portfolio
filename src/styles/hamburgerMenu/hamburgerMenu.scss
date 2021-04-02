@@ -6,7 +6,8 @@
     display: block;
     width: 26px;
     height: 2px;
-    background-color: $orange_text;
+    // background-color: $orange_text;
+    background-color: white;
     transition: 0.3s;
     transform-origin: 3px 1px;
     &:not(:last-child) {

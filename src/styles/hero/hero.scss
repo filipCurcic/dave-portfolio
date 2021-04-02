@@ -16,7 +16,8 @@
       width: 100%;
       font-size: 20px;
       h1 {
-        color: $orange_text;
+        // color: $orange_text;
+        color: white;
       }
     }
 
@@ -32,7 +33,7 @@
       top: 33%;
       height: 40%;
       clip-path: polygon(0 23.7%, 100% 0, 100% 76.3%, 0% 100%);
-      background-image: url('../../images/vi.jfif');
+      background-image: url('../../images/vi2.jfif');
       background-repeat: no-repeat;
       background-size: 100% 100%;
     }
@@ -93,8 +94,8 @@
   .content2 {
     left: 24%;
     width: 60%;
+    background-image: url('../../images/pa.jpg');
     clip-path: polygon(25.9% 0, 85% 0, 60.1% 100%, 0% 100%);
-    background-image: url('../../images/vi.jfif');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     h1 {
@@ -104,8 +105,8 @@
   .content3 {
     right: 0;
     width: 40%;
+    background-image: url('../../images/vi2.jfif');
     clip-path: polygon(37.3% 0, 100% 0, 100% 100%, 0% 100%);
-    background-image: url('../../images/pa.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     h1 {
