@@ -18,7 +18,10 @@ const HamburgerMenu = () => {
         <span className="buttonLine"></span>
         <span className="buttonLine"></span>
       </div>
-      <MenuModal open={isModalOpen}> asdasdasd </MenuModal>
+      <MenuModal click={toggleMenuOpen} open={isModalOpen}>
+        {' '}
+        asdasdasd{' '}
+      </MenuModal>
     </>
   );
 };

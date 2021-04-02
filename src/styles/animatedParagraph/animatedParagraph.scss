@@ -1,0 +1,10 @@
+.animatedParagraph {
+  font-size: 1.9em;
+  line-height: 50px;
+}
+@media (max-width: 1021px) {
+  .animatedParagraph {
+    font-size: 1.65em;
+    line-height: normal;
+  }
+}

@@ -9,15 +9,14 @@
       font-size: 5em;
       margin-bottom: 0.75em;
     }
-    p {
-      font-size: 1.65em;
-      line-height: 30px;
-    }
   }
   &__rightContainer {
     width: 40%;
     text-align: center;
     margin-top: 2em;
+    h1 {
+      font-size: 3.5em;
+    }
     &__formTopContainer {
       justify-content: space-between;
     }
