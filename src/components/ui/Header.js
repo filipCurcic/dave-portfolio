@@ -15,18 +15,18 @@ const Header = () => {
         </div>
       </Link>
       <div className="header__buttonContainer flex flex-fd-r hide-for-mobile">
-        {/* <div className="header__buttonContainer__button">
+        <div className="header__buttonContainer__button">
           <Link to="/contact">Contact</Link>
-        </div> */}
-        <div className="header__buttonContainer__button">
-          <Link to="/login">LOGIN</Link>
-        </div>
-        <div className="header__buttonContainer__button">
-          <Link to="/register">REGISTER</Link>
         </div>
         {/* <div className="header__buttonContainer__button">
-          <Link to="/shop">SHOP</Link>
+          <Link to="/login">LOGIN</Link>
         </div> */}
+        {/* <div className="header__buttonContainer__button">
+          <Link to="/register">REGISTER</Link>
+        </div> */}
+        <div className="header__buttonContainer__button">
+          <Link to="/shop">SHOP</Link>
+        </div>
         <div className="header__buttonContainer__button">
           <a
             target="_blank"
