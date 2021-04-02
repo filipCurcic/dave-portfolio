@@ -22,7 +22,11 @@ const MenuModal = ({ open, click }) => {
             Contact
           </Link>
         </div>
-        <div>Shop</div>
+        <div>
+          <Link onClick={click} to="/shop">
+            Shop
+          </Link>
+        </div>
         <div>
           <a
             onClick={click}
