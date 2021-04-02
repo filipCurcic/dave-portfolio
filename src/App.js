@@ -9,6 +9,7 @@ import Login from './pages/Login';
 import Auth from './auth/Auth';
 import SignUp from './pages/SignUp';
 import Contact from './pages/Contact';
+import ComingSoon from './pages/ComingSoon';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Route exact path="/videography" component={Videography} />
             <Route exact path="/contact" component={Contact} />
             <Route exact path="/panorama" component={Panoramas} />
+            <Route exact path="/shop" component={ComingSoon} />
             <Route exact path="/login" component={Login} />
             <Route exact path="/register" component={SignUp} />
           </Switch>
