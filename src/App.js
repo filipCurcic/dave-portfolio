@@ -24,8 +24,8 @@ function App() {
             <Route exact path="/contact" component={Contact} />
             <Route exact path="/panorama" component={Panoramas} />
             <Route exact path="/shop" component={ComingSoon} />
-            <Route exact path="/login" component={Login} />
-            <Route exact path="/register" component={SignUp} />
+            <Route exact path="/N8dP7l6Mslzof05" component={Login} />
+            <Route exact path="/vcRBbuk8UxAF3Ok" component={SignUp} />
           </Switch>
         </div>
       </Router>
