@@ -25,7 +25,13 @@ const Header = () => {
           <Link to="/register">REGISTER</Link>
         </div> */}
         <div className="header__buttonContainer__button">
-          <Link to="/shop">SHOP</Link>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://davidcphoto.picfair.com/"
+          >
+            Shop
+          </a>
         </div>
         <div className="header__buttonContainer__button">
           <a

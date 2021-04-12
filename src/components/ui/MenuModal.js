@@ -23,9 +23,14 @@ const MenuModal = ({ open, click }) => {
           </Link>
         </div>
         <div>
-          <Link onClick={click} to="/shop">
+          <a
+            onClick={click}
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://davidcphoto.picfair.com/"
+          >
             Shop
-          </Link>
+          </a>
         </div>
         <div>
           <a
